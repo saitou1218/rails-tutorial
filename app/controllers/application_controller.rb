@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   
-  def hello
-    render html: "hello, world!"
+  def index
+    @users = users.all
   end
 end
